@@ -7,14 +7,14 @@
     <title>Shopper's Choice\contact.hbs</title>
 </head>
 <body>
-    <form method="post" id="contactForm">
+    <form method="post" id="contactForm" autocomplete="off">
         <div class="formEle">
             <label for="userName">Customer name:</label>
-            <input type="text" name="userName" id="userName" minlength="3">
+            <input type="text" name="userName" id="userName">
         </div>
         <div class="formEle">
             <label for="userMobileNumber">Mobile number:</label>
-            <input type="number" name="userMobileNumber" id="userMobileNumber" minlength="10">
+            <input type="number" name="userMobileNumber" id="userMobileNumber">
         </div>
         <div class="formEle">
             <label for="userEmailAddress">Email address:</label>
@@ -25,7 +25,7 @@
             <textarea name="userMessage" id="userMessage" cols="30" rows="5"></textarea>
         </div>
 
-        <input type="submit" value="Submit" id="contactSub">
+        <input type="submit" value="Submit" id="contactSub" onclick="window.open(/feedback.hbs)">
     </form>
 </body>
 </html>

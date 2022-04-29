@@ -1,4 +1,5 @@
 var express = require('express');
+require("./public/db/conn");
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
