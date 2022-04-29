@@ -34,7 +34,7 @@ router.get('/cart', function(req, res, next) {
   }
   var cart = new Cart(req.session.cart);
   res.render('cart', {
-    title: 'NodeJS Shopping Cart',
+    title: 'Shopping Cart',
     products: cart.getItems(),
     totalPrice: cart.totalPrice
   });
@@ -49,4 +49,11 @@ router.get('/remove/:id', function(req, res, next) {
   res.redirect('/cart');
 });
 
+router.get('/payment.hbs', (req,res)=>{
+  res.render("payment.hbs");
+})
+
+router.get('/contact.hbs', (req,res)=>{
+  res.render("contact.hbs");
+})
 module.exports = router;

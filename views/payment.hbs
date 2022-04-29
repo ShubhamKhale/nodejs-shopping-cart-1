@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" href="style.css"> --}}
+    <title>Shopper's Choice\Payment</title>
+</head>
+<body>
+    <div class="paymentContainer">
+        <form method="post" id="paymentForm">
+                    <div class="cardHolderName inlineDisplay">
+                        <label for="">Card holder's name:</label>
+                        <input type="text" name="cardHolderName" id="cardName" minlength="3" required>
+                    </div>
+
+                    <div class="cardNumber inlineDisplay">
+                        <label for="">Card Number:</label>
+                        <input type="number" name="cardNumber" id="cardNumber" minlength="16" required>
+                    </div>
+
+                    <div class="startDate inlineDisplay">
+                        <label>Start Date:</label>
+                        <input placeholder="month" type="number" name="startDateMonth" min="1" max="12" id="startDate" required>
+                        <input class="yearBox" placeholder="year" type="number" name="startDateYear" min="2010" minlength="4" required>
+                    </div>
+
+                    <div class="expiryDate inlineDisplay">
+                        <label>Expiry Date:</label>
+                        <input placeholder="month" type="number" name="expiryDateMonth" min="1" max="12" id="expiryDate" required>
+                        <input class="yearBox" placeholder="year" type="number" name="expiryDateYear" minlength="4" required>
+                    </div>
+
+                    <div class="securityCode inlineDisplay">
+                        <label>Security Code:</label>
+                        <input type="password" name="securityCode" minlength="8" id="securityCode" required>
+                    </div>
+                    
+                    <div class="address inlineDisplay" id="finalAddress">
+                        <label>Address:</label>
+                        <textarea name="billingAddress" id="billingAddress" cols="40" rows="5" required></textarea>
+                    </div>
+
+                    <div class="formBtns inlineDisplay">
+                        <input type="submit" id="buy" vlaue="Submit">
+                    </div>
+        </form>
+    </div>
+    
+</body>
+</html>

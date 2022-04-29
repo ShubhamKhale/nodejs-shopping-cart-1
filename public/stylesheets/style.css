@@ -1,16 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding: 50px;
-  font: 16px 'Lato', sans-serif;
+  font: 16px "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
 }
 
-* {
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
+a:hover {
+  text-decoration: none;
 }
 
 .dropdown-menu .cart {
@@ -22,7 +26,7 @@ a {
   padding: 0 0 10px 0;
 }
 
-.dropdown-menu .cart .totalPrice{
+.dropdown-menu .cart .totalPrice {
   font-size: 120%;
   font-weight: bold;
   padding: 15px 0;
@@ -30,4 +34,286 @@ a {
 
 .cart.page {
   padding: 25px 0;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  width: 92vw;
+}
+
+.pageHeader {
+  background-color: black;
+  color: white;
+  width: 107%;
+  height: 5vw;
+  position: relative;
+  bottom: 50px;
+  right: 35px;
+}
+
+#homeLogo {
+  width: 60px;
+  height: 57px;
+  border: 2px solid black;
+  margin-top: 10px;
+  border-radius: 24px;
+}
+
+.leftHead {
+  display: flex;
+}
+
+#navTitle {
+  margin: 0 0 10px;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  font-size: 24px;
+}
+
+#homeLink {
+  color: #00b7ff;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  border: 2px solid white;
+  padding: 7px;
+  width: 62px;
+  height: 37px;
+  border-radius: 12px;
+}
+
+#homeLink:hover {
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+}
+
+#cartIcon {
+  position: relative;
+  top: 30px;
+  border: 2px solid white;
+  padding: 6px;
+  border-radius: 9px;
+}
+
+#cartIcon:hover {
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+}
+
+.secondNav {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  background-repeat: no-repeat;
+  width: 107%;
+  height: 40%;
+  position: relative;
+  bottom: 50px;
+  right: 50px;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.secondNav ul {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+
+.secondNav ul li {
+  list-style: none;
+}
+
+.navItem {
+  color: black;
+  /* border: 2px solid red; */
+  padding: 3px;
+  border-radius: 8px;
+  position: relative;
+  top: 5px;
+  border: 2px solid black;
+}
+
+.navItem:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.footer {
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  right: -1px;
+  text-align: center;
+  margin-top: 11px;
+}
+
+#productImg {
+  width: 149px;
+  height: 206px;
+  margin-right: 50px;
+}
+
+.productIntro {
+  display: flex;
+}
+
+.productDetails {
+  width: 128rem;
+  height: 16rem;
+  font-size: 15px;
+  position: relative;
+  top: 3rem;
+}
+
+.addToCart {
+  background-color: chartreuse;
+}
+
+.addToCart:hover {
+  background-color: #00b7ff;
+  cursor: pointer;
+}
+
+.caption {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cartTitle {
+  margin-bottom: 17rem;
+}
+
+#paymentForm {
+  margin-left: 48rem;
+}
+
+#cardName {
+  margin-left: 12rem;
+}
+
+#cardNumber {
+  margin-left: 16rem;
+}
+
+#startDate {
+  margin-left: 18.2rem;
+  width: 71px;
+}
+
+#expiryDate {
+  margin-left: 17.2rem;
+  width: 70px;
+}
+
+#securityCode {
+  margin-left: 15.7rem;
+}
+
+#billingAddress {
+  margin-left: 19.7rem;
+}
+
+#buy {
+  margin-left: 54rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: chartreuse;
+  margin-bottom: 8rem;
+}
+
+#buy:hover {
+  background-color: rgb(127, 218, 36);
+}
+
+.inlineDisplay {
+  margin-bottom: 13px;
+}
+
+.yearBox {
+  width: 7rem;
+}
+
+#contactLink {
+  color: #00b7ff;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  border: 2px solid white;
+  padding: 7px;
+  width: 72px;
+  height: 37px;
+  border-radius: 12px;
+}
+
+#contactLink:hover {
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 58rem;
+  margin: auto;
+}
+
+#userName {
+  margin-left: 8rem;
+}
+
+#userMobileNumber {
+  margin-left: 8.4rem;
+}
+
+#userEmailAddress {
+  margin-left: 9.5rem;
+}
+
+#userMessage {
+  margin-left: 13rem;
+}
+
+#contactSub {
+  width: 71px;
+  padding: 3px;
+  margin-left: 39rem;
+  margin-top: 4rem;
+  margin-bottom: 12rem;
+  border: none;
+  border-radius: 5px;
+  background-color: chartreuse;
+}
+
+#contactSub:hover {
+  cursor: pointer;
+  background-color: rgb(127, 218, 36);
+}
+
+.formEle{
+  margin-bottom: 2rem;
 }

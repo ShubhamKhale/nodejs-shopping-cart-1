@@ -1,12 +1,15 @@
-<div class="row">
+<div class="row pageHeader">
     <div class="col-xs-4">
-        <div class="pull-left">
-        <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <div class="pull-left leftHead">
+        <img src="/icons8-shopping-cart.gif" alt="Shopping Cart" id="homeLogo" class="rounded-circle">
+        <p id="navTitle">Shopper's Choice</p>
+        <a href="/" id="homeLink" class="rounded-circle">Home</a>
+        <a href="/contact.hbs" id="contactLink" >Contact</a>
         </div>
     </div>
     <div class="col-xs-8">
         <div class="dropdown pull-right">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-toggle" id="cartIcon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
                 {{# if session.cart.totalItems }}
                 <span>({{session.cart.totalItems}})</span>
@@ -40,3 +43,28 @@
         </div>
     </div>
 </div>
+<div class="secondNav">
+    <ul>
+        <li>
+            <img src="/icons8-computer-24.png" alt="electronics">
+            <a href="#" id="nav1" class="navItem">Electronics</a>
+        </li>
+        <li>
+            <img src="/icons8-appliances-30.png" alt="homeAppliances">
+            <a href="#" id="nav2" class="navItem">Home Appliances</a>
+        </li>
+        <li>
+            <img src="/icons8-womens-suit-30.png" alt="fashion">
+            <a href="#" id="nav3" class="navItem">Fashion</a>
+        </li>
+        <li>
+            <img src="/icons8-ingredients-30.png" alt="grocery">
+            <a href="#" id="nav4" class="navItem">Grocery</a>
+        </li>
+        <li>
+            <img src="/icons8-education-30.png" alt="education">
+            <a href="#" id="nav5" class="navItem">Education</a>
+        </li>
+    </ul>
+</div>
+

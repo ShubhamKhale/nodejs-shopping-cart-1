@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper's Choice\contact.hbs</title>
+</head>
+<body>
+    <form method="post" id="contactForm">
+        <div class="formEle">
+            <label for="userName">Customer name:</label>
+            <input type="text" name="userName" id="userName" minlength="3">
+        </div>
+        <div class="formEle">
+            <label for="userMobileNumber">Mobile number:</label>
+            <input type="number" name="userMobileNumber" id="userMobileNumber" minlength="10">
+        </div>
+        <div class="formEle">
+            <label for="userEmailAddress">Email address:</label>
+            <input type="email" name="userEmailAddress" id="userEmailAddress">
+        </div>
+        <div class="formEle">
+            <label for="userMessage">Message:</label>
+            <textarea name="userMessage" id="userMessage" cols="30" rows="5"></textarea>
+        </div>
+
+        <input type="submit" value="Submit" id="contactSub">
+    </form>
+</body>
+</html>
