@@ -73,7 +73,7 @@ router.post("/contact.hbs", async(req,res)=>{
       await contactusFormDetails.save();
       res.status(200).render("feedback.hbs");
   } catch(error) {
-      res.status(404).send(error);
+      res.status(404).render("feedback.hbs");
   }
 })
 

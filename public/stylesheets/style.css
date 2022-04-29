@@ -317,3 +317,27 @@ a:hover {
 .formEle{
   margin-bottom: 2rem;
 }
+
+.thankyouPageContent{
+  border: 2px solid lightslategray;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  text-align: center;
+  width: 60rem;
+  margin: auto;
+  border-radius: 13px;
+  padding: 16px;
+  margin-bottom: 7.7rem;
+  margin-top: 3.5rem;
+}
+
+.feedbackPageContent{
+  border: 2px solid lightslategray;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  text-align: center;
+  width: 60rem;
+  margin: auto;
+  border-radius: 13px;
+  padding: 16px;
+  margin-bottom: 7.7rem;
+  margin-top: 3.5rem;
+}
